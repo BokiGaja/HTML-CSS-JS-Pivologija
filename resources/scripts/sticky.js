@@ -28,3 +28,15 @@ $(document).ready(function(){
         offset: '60px;'
     });
 });
+
+$(document).ready(function(){
+    $('.js-o-nama').waypoint(function(direction) {
+        if (direction == "down") {
+            $('.logo-3').addClass ('logo-3-moving')
+        } else {
+            $('.logo-3').removeClass('logo-3-moving');
+        }
+    }, {
+        offset: '60px;'
+    });
+});
