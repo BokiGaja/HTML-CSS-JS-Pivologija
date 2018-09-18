@@ -116,6 +116,9 @@
     .logo {
         display: none;
     }
+    .logo_2 {
+        margin-top: 40px;
+    }
     .logo-3 {
         display: block;
         position: fixed;
@@ -123,15 +126,16 @@
     }
     .social-links {
         display: block;
+        width: 90px;
         margin-left: 0px;
-        margin-right: 170px;
+        margin-right: 150px;
         margin-top: -70px;
     }
     .slideshow-container {
       max-width: 900px;
       width: 500px;
       position: relative;
-      margin: 150px 25px 0px 120px;
+      margin: 250px 0px 0px 25px;
     }
     h1 {
         text-align: center;
@@ -201,7 +205,7 @@
 }
 
 /* Small phones 0-480px */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 540px) {
     section {padding: 25% 0;}
     .logo-3 {
         height: 75px;
@@ -332,10 +336,3 @@
         float: left;
     }
 }
-
-
-
-
-
-
-
