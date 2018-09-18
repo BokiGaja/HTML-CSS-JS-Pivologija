@@ -1,0 +1,545 @@
+/* ---------- BASIC SETUP ---------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    background-color: #fff;
+    color: #555555;       
+    /* It will use one of three fonts */   
+    font-family: "Lato" , "Arial" , sans-serif;                     
+    font-weight: 300;
+    font-size: 20px;
+    /* Makes fonts render perfectly */
+    text-rendering: optimizeLegibility;
+    /* While resizing doesn't let screen to go to side */                                   
+}
+
+/* It clears the floats */
+.clearfix {zoom: 1}                                         
+.clearfix:after {                                          
+    content: '_';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+header,
+section {
+    overflow: auto;
+}
+
+section {
+    padding: 0 0;
+}
+.row {
+    max-width: 1140px;
+    margin: 0 auto;                        
+}
+
+
+
+/* ---------- HEADER ---------- */
+
+header {  
+    /* linear-gradient makes image darker, last number is procent of darkness */
+    background-image: -webkit- url(images/background_2.jpeg);  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background_2.jpeg); 
+    background-size: cover;
+    background-position: center;
+    /* 100vh stands for 100% view height */
+    height: 100vh;      
+    /* Background will stay at the same place even if you scrool website */
+    background-attachment: fixed;                           
+}
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: 0px;
+    border-radius: 100%;
+}
+.logo_2 {
+    height: 100px;
+    width: auto;
+    float: right;
+    margin-top: 50px;
+    margin-right: -100px;
+}
+
+
+/* ---------- MAIN NAVIGATION ---------- */
+
+.main-nav {
+    float: left;
+    /*To remove bullet point */
+    list-style: none;                                       
+    margin-top: 55px;
+}
+.main-nav li {    
+    /* Put elements side by side */
+    display: inline;                                        
+    margin-left: 20px;
+}
+.main-nav li a:link,                                       
+.main-nav li a:visited {                                   
+    padding: 8px 0;
+    color: white;
+    /* Removes underline, bold, italic */
+    text-decoration: none;                                 
+    text-transform: uppercase;
+    font-size: 90%;
+    /* Use transparent so color will not be visible until you hover it */
+    border-bottom: 2px transparent solid;                 
+    transition: border-bottom 0.5s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px #d0a801 solid;
+}
+
+
+/* ---------- SLIDE SHOW ---------- */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: 100px 250px 0px 250px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+    outline: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+    
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.dots {
+    position: relative;
+    margin: 0px 0px;
+}
+.picture {
+    border-radius: 10%;
+    border-style: hidden;
+}
+
+/* ---------- SOCIAL MEDIA ---------- */
+
+.social-links {
+    list-style: none;
+    float: right;
+    margin: -120px 0px 0px 1025px ;
+    color: #d8d8d8;
+}
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.social-links li:last-child {
+    margin-right: 0;
+}
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #a3a3a3;
+}
+.social-links li a:hover,
+.social-links li a:active {
+    text-decoration: none;
+    border: 0;
+    color: #f2f2f2;
+    transition: color 1s;
+}
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+.ion-logo-facebook:hover {                                          
+    color: #3b5998;
+    transition: color 1s;
+}
+.ion-md-mail:hover {
+    color: #dd4b39;
+    transition: color 1s;
+}
+
+
+/* ---------- ABOUT US ---------- */
+section {
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 500px;
+    border-bottom: solid 2px #e8bc01;
+    padding-bottom: 4px;
+}
+.section-o-nama {
+    background-color: #ebebeb;
+}
+.bs-pic {
+    height: 600px;
+    margin-left: 70px;
+    border-radius: 20%;
+    margin-bottom: 10px;
+}
+.about-us-text {
+    text-align: center;
+    float: right;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 0;
+}
+.fb-comments-pic {
+    border-radius: 5%;
+}
+
+
+/* ---------- PIVA ---------- */
+h2 {
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 500px;
+    border-bottom: solid 2px #e8bc01;
+    padding-bottom: 4px;
+    color: white;
+}
+.section-piva {
+    background-image: url(images/Webp.net-resizeimage.jpg), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+}
+.piva-text {
+    text-align: center;
+    float: right;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 20px;
+    color: white;
+}
+.crow-logo {
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.dogma-logo {
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.pivnice-2 {
+    float: inherit;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.zbir-logo {
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.primator-logo {
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.salto-logo {
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+.kors-logo {
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+
+/* ---------- NADJI SVOJ UKUS ---------- */
+h3 {
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 450px;
+    border-bottom: solid 2px #e8bc01;
+    padding-bottom: 4px;
+}
+.section-otkrij-ukus {
+    height: 100vh;
+    background-color: #ebebeb;
+}
+h4 {
+    margin-top: 150px;
+}
+.taste-choise {
+    float: right;
+    margin-top: -200px;
+    margin-right: -140px;
+}
+.taste-choise select {
+    margin-bottom: 20px;
+}
+
+.taste-calculator {
+    float: left;
+    margin-left: 145px;
+}
+.taste-calculator p {
+    margin: 25px 0;
+}
+.bottle-image {
+    float: right;
+}
+.bottle-qm {
+    float: right;
+    border-radius: 50%;
+    margin-right: 80px;
+    max-height: 500px;
+}
+.btn-pronadji {
+    display: inline-block;
+    font-size: 30px;
+    padding: 0 5px;
+    background-color: #e29407;
+    border: 1px solid #d38800;
+    height: 40px;
+    border-radius: 20%;
+    color: #d4d4d4;
+}
+select {
+    display: block;
+}
+
+
+/* ---------- KAKO DO NAS ---------- */
+h5 {
+    font-size: 25px;
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 210px;
+    margin-bottom: 40px;
+    border-bottom: solid 2px #e8bc01;
+    padding-bottom: 4px;
+}
+.info p {
+    text-align: center;
+}
+.google-map {
+    border-radius: 5%;
+    width:650px;
+    height:400px;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background-color: #ebebeb;
+    text-align: center;
+}
+
+
+/* ---------- STICKY NAVIGATION ---------- 
+.sticky {
+    /* With fixed position navigation will always stay on his position regardless of scrolling 
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #b9b9b9;
+    /* Defines vertical stacking of elemts and now sticky navigation will on top of all elements 
+    z-index: 9999;
+}
+
+.sticky .logo {
+    height: 50px;
+    margin-top: 5px;
+}
+
+.sticky .main-nav {
+    margin-top: 15px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: black;
+}
+
+.sticky .logo_2 {
+    height: 55px;
+    margin-top: 5px;
+}
+*/
+
+/* ---------- ANIMATION ---------- */
+
+.bs-pic {
+    opacity: 0;
+    animation-duration: 1s;
+    -webkit-animation-duration:1s;
+}
+.bs-pic animated {
+    opacity: 1;
+}
+
+.bottle-qm {
+    opacity: 0;
+    animation-duration: 1s;
+    -webkit-animation-duration:1s; 
+}
+
+.bottle-qm animated {
+    opacity: 1;
+}
+
+
+/* ---------- TO THE TOP BUTTON ---------- */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(160, 160, 160, 0.53); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 60px; /* Increase font size */
+    transition: 1s ease-out;
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.mobile-nav-icon {
+    display: block;
+    color: white;
+    margin-top: 50px;
+}
+
+.logo-3 {
+    display: none;
+   height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: 0px;
+    border-radius: 100%; 
+}
+
